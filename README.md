@@ -25,21 +25,21 @@ Git clone:
 
 Let's imagine a file structure like this, located in ```/home/my_name/dev/my_project```:
 ```
-~/dev/my_project> tree -a
+    ~/dev/my_project> tree -a
 
-./my_project/
-│
-├── src/
-│   ├── main.c
-│   ├── op.c
-│   └── epitech.c
-│
-├── include/
-│   ├── my_project.h
-│   ├── op.h
-│   └── epitech.h
-├── Makefile
-└──.gitignore
+    ./my_project/
+    │
+    ├── src/
+    │   ├── main.c
+    │   ├── op.c
+    │   └── epitech.c
+    │
+    ├── include/
+    │   ├── my_project.h
+    │   ├── op.h
+    │   └── epitech.h
+    ├── Makefile
+    └──.gitignore
 ```
 
 Imagine we have an alias ```epitest=~/App/epitest-docker/epitest.sh``` then just run it at the **root of your project**:
