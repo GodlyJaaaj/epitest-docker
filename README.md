@@ -15,11 +15,11 @@ Git clone:
     cd ~/App
     git clone git@github.com:GodlyJaaaj/epitest-docker.git
     cd epitest-docker
-    chmod +x epitest.sh build.sh
-    ./build.sh
+    chmod +x epitest.sh
 ```
 
-*build.sh* will build the base image. Do not delete this local docker image or you'll have to rebuild it.
+*epitest.sh* will build the base image. Do not delete this local docker image or you'll have to rebuild it.
+Also do not move epitest.sh away from the Dockerfile (they must be in the same directory).
 
 ## Usage/Examples
 

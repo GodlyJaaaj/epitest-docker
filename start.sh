@@ -5,10 +5,10 @@
 
 if [[ "$(docker images -q epitest_base:latest 2> /dev/null)" == "" ]]; then
   echo "Building image"
-  docker build . --target build -t epitest_base:latest
+    docker build --file="$(dirname "$(readlink -f "$0")")""/Dockerfile" . --target build -t epitest_base:latest
 else
   echo "Image already exists"
-  docker build . --target copy --cache-from epitest_base:latest -t epitest:latest
+  docker build --file="$(dirname "$(readlink -f "$0")")""/Dockerfile" . --target copy --cache-from epitest_base:latest -t epitest:latest
 fi
 
 #remove dangling image (AKA caches)
